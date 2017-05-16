@@ -1,0 +1,324 @@
+D:\work\courses\selenium-training\venv\Scripts\python.exe C:\Users\radio\.IntelliJIdea2016.3\config\plugins\python\helpers\pycharm\pytestrunner.py -p pytest_teamcity D:/work/courses/selenium-training/scripts/test010.py
+Testing started at 23:56 ...
+============================= test session starts =============================
+platform win32 -- Python 3.6.0, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: D:\work\courses\selenium-training\scripts, inifile:
+collected 3 items
+
+test010.py 
+
+Checking tab 'Campaign Products'
+Found 1 product(s)
+
+Checking product: Yellow Duck
+Regular and Action prices are present: Passed
+Color of regular price is grey: Passed
+Style of regular price is striked out: Passed
+Color of campaign price is red: Passed
+Style of campaign price is bold: Passed (actual: '700')
+Size of regular price is less than campaign price: Passed (12.00 ~ 18.75)
+Color of regular (detailed) price is grey: Passed
+Style of regular (detailed) price is striked out: Passed
+Color of campaign (detailed) price is red: Passed
+Style of campaign (detailed) price is bold: Passed (actual: '700')
+Size of regular (detailed) price is less than campaign (detailed) price: Passed (22.50 ~ 30.00)
+Product name is correct: Passed (expected 'Yellow Duck' EQ actual 'Yellow Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+Product campaign price is correct: Passed (expected '$18' EQ actual '$18')
+Campaign price is greater than regular price: Passed
+
+Checking tab 'Popular Products'
+Found 5 product(s)
+
+Checking product: Purple Duck
+Regular and Action prices are missing: Passed
+Product name is correct: Passed (expected 'Purple Duck' EQ actual 'Purple Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+
+Checking product: Yellow Duck
+Regular and Action prices are present: Passed
+Color of regular price is grey: Passed
+Style of regular price is striked out: Passed
+Color of campaign price is red: Passed
+Style of campaign price is bold: Passed (actual: '700')
+Size of regular price is less than campaign price: Passed (12.00 ~ 18.75)
+Color of regular (detailed) price is grey: Passed
+Style of regular (detailed) price is striked out: Passed
+Color of campaign (detailed) price is red: Passed
+Style of campaign (detailed) price is bold: Passed (actual: '700')
+Size of regular (detailed) price is less than campaign (detailed) price: Passed (22.50 ~ 30.00)
+Product name is correct: Passed (expected 'Yellow Duck' EQ actual 'Yellow Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+Product campaign price is correct: Passed (expected '$18' EQ actual '$18')
+Campaign price is greater than regular price: Passed
+
+Checking product: Blue Duck
+Regular and Action prices are missing: Passed
+Product name is correct: Passed (expected 'Blue Duck' EQ actual 'Blue Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+
+Checking product: Red Duck
+Regular and Action prices are missing: Passed
+Product name is correct: Passed (expected 'Red Duck' EQ actual 'Red Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+
+Checking product: Green Duck
+Regular and Action prices are missing: Passed
+Product name is correct: Passed (expected 'Green Duck' EQ actual 'Green Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+
+Checking tab 'Latest Products'
+Found 5 product(s)
+
+Checking product: Yellow Duck
+Regular and Action prices are present: Passed
+Color of regular price is grey: Passed
+Style of regular price is striked out: Passed
+Color of campaign price is red: Passed
+Style of campaign price is bold: Passed (actual: '700')
+Size of regular price is less than campaign price: Passed (12.00 ~ 18.75)
+Color of regular (detailed) price is grey: Passed
+Style of regular (detailed) price is striked out: Passed
+Color of campaign (detailed) price is red: Passed
+Style of campaign (detailed) price is bold: Passed (actual: '700')
+Size of regular (detailed) price is less than campaign (detailed) price: Passed (22.50 ~ 30.00)
+Product name is correct: Passed (expected 'Yellow Duck' EQ actual 'Yellow Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+Product campaign price is correct: Passed (expected '$18' EQ actual '$18')
+Campaign price is greater than regular price: Passed
+
+Checking product: Green Duck
+Regular and Action prices are missing: Passed
+Product name is correct: Passed (expected 'Green Duck' EQ actual 'Green Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+
+Checking product: Red Duck
+Regular and Action prices are missing: Passed
+Product name is correct: Passed (expected 'Red Duck' EQ actual 'Red Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+
+Checking product: Blue Duck
+Regular and Action prices are missing: Passed
+Product name is correct: Passed (expected 'Blue Duck' EQ actual 'Blue Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+
+Checking product: Purple Duck
+Regular and Action prices are missing: Passed
+Product name is correct: Passed (expected 'Purple Duck' EQ actual 'Purple Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+
+
+Overall result for FireFox: Passed
+.
+
+Checking tab 'Campaign Products'
+Found 1 product(s)
+
+Checking product: Yellow Duck
+Regular and Action prices are present: Passed
+Color of regular price is grey: Passed
+Style of regular price is striked out: Passed
+Color of campaign price is red: Passed
+Style of campaign price is bold: Passed (actual: '700')
+Size of regular price is less than campaign price: Passed (12.00 ~ 18.73)
+Color of regular (detailed) price is grey: Passed
+Style of regular (detailed) price is striked out: Passed
+Color of campaign (detailed) price is red: Passed
+Style of campaign (detailed) price is bold: Passed (actual: '700')
+Size of regular (detailed) price is less than campaign (detailed) price: Passed (22.53 ~ 30.00)
+Product name is correct: Passed (expected 'Yellow Duck' EQ actual 'Yellow Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+Product campaign price is correct: Passed (expected '$18' EQ actual '$18')
+Campaign price is greater than regular price: Passed
+
+Checking tab 'Popular Products'
+Found 5 product(s)
+
+Checking product: Red Duck
+Regular and Action prices are missing: Passed
+Product name is correct: Passed (expected 'Red Duck' EQ actual 'Red Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+
+Checking product: Yellow Duck
+Regular and Action prices are present: Passed
+Color of regular price is grey: Passed
+Style of regular price is striked out: Passed
+Color of campaign price is red: Passed
+Style of campaign price is bold: Passed (actual: '700')
+Size of regular price is less than campaign price: Passed (12.00 ~ 18.73)
+Color of regular (detailed) price is grey: Passed
+Style of regular (detailed) price is striked out: Passed
+Color of campaign (detailed) price is red: Passed
+Style of campaign (detailed) price is bold: Passed (actual: '700')
+Size of regular (detailed) price is less than campaign (detailed) price: Passed (22.53 ~ 30.00)
+Product name is correct: Passed (expected 'Yellow Duck' EQ actual 'Yellow Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+Product campaign price is correct: Passed (expected '$18' EQ actual '$18')
+Campaign price is greater than regular price: Passed
+
+Checking product: Green Duck
+Regular and Action prices are missing: Passed
+Product name is correct: Passed (expected 'Green Duck' EQ actual 'Green Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+
+Checking product: Purple Duck
+Regular and Action prices are missing: Passed
+Product name is correct: Passed (expected 'Purple Duck' EQ actual 'Purple Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+
+Checking product: Blue Duck
+Regular and Action prices are missing: Passed
+Product name is correct: Passed (expected 'Blue Duck' EQ actual 'Blue Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+
+Checking tab 'Latest Products'
+Found 5 product(s)
+
+Checking product: Yellow Duck
+Regular and Action prices are present: Passed
+Color of regular price is grey: Passed
+Style of regular price is striked out: Passed
+Color of campaign price is red: Passed
+Style of campaign price is bold: Passed (actual: '700')
+Size of regular price is less than campaign price: Passed (12.00 ~ 18.73)
+Color of regular (detailed) price is grey: Passed
+Style of regular (detailed) price is striked out: Passed
+Color of campaign (detailed) price is red: Passed
+Style of campaign (detailed) price is bold: Passed (actual: '700')
+Size of regular (detailed) price is less than campaign (detailed) price: Passed (22.53 ~ 30.00)
+Product name is correct: Passed (expected 'Yellow Duck' EQ actual 'Yellow Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+Product campaign price is correct: Passed (expected '$18' EQ actual '$18')
+Campaign price is greater than regular price: Passed
+
+Checking product: Green Duck
+Regular and Action prices are missing: Passed
+Product name is correct: Passed (expected 'Green Duck' EQ actual 'Green Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+
+Checking product: Red Duck
+Regular and Action prices are missing: Passed
+Product name is correct: Passed (expected 'Red Duck' EQ actual 'Red Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+
+Checking product: Blue Duck
+Regular and Action prices are missing: Passed
+Product name is correct: Passed (expected 'Blue Duck' EQ actual 'Blue Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+
+Checking product: Purple Duck
+Regular and Action prices are missing: Passed
+Product name is correct: Passed (expected 'Purple Duck' EQ actual 'Purple Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+
+
+Overall result for Internet Explorer: Passed
+.
+
+Checking tab 'Campaign Products'
+Found 1 product(s)
+
+Checking product: Yellow Duck
+Regular and Action prices are present: Passed
+Color of regular price is grey: Passed
+Style of regular price is striked out: Passed
+Color of campaign price is red: Passed
+Style of campaign price is bold: Passed (actual: 'bold')
+Size of regular price is less than campaign price: Passed (12.00 ~ 18.75)
+Color of regular (detailed) price is grey: Passed
+Style of regular (detailed) price is striked out: Passed
+Color of campaign (detailed) price is red: Passed
+Style of campaign (detailed) price is bold: Passed (actual: 'bold')
+Size of regular (detailed) price is less than campaign (detailed) price: Passed (22.50 ~ 30.00)
+Product name is correct: Passed (expected 'Yellow Duck' EQ actual 'Yellow Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+Product campaign price is correct: Passed (expected '$18' EQ actual '$18')
+Campaign price is greater than regular price: Passed
+
+Checking tab 'Popular Products'
+Found 5 product(s)
+
+Checking product: Yellow Duck
+Regular and Action prices are present: Passed
+Color of regular price is grey: Passed
+Style of regular price is striked out: Passed
+Color of campaign price is red: Passed
+Style of campaign price is bold: Passed (actual: 'bold')
+Size of regular price is less than campaign price: Passed (12.00 ~ 18.75)
+Color of regular (detailed) price is grey: Passed
+Style of regular (detailed) price is striked out: Passed
+Color of campaign (detailed) price is red: Passed
+Style of campaign (detailed) price is bold: Passed (actual: 'bold')
+Size of regular (detailed) price is less than campaign (detailed) price: Passed (22.50 ~ 30.00)
+Product name is correct: Passed (expected 'Yellow Duck' EQ actual 'Yellow Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+Product campaign price is correct: Passed (expected '$18' EQ actual '$18')
+Campaign price is greater than regular price: Passed
+
+Checking product: Purple Duck
+Regular and Action prices are missing: Passed
+Product name is correct: Passed (expected 'Purple Duck' EQ actual 'Purple Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+
+Checking product: Green Duck
+Regular and Action prices are missing: Passed
+Product name is correct: Passed (expected 'Green Duck' EQ actual 'Green Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+
+Checking product: Red Duck
+Regular and Action prices are missing: Passed
+Product name is correct: Passed (expected 'Red Duck' EQ actual 'Red Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+
+Checking product: Blue Duck
+Regular and Action prices are missing: Passed
+Product name is correct: Passed (expected 'Blue Duck' EQ actual 'Blue Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+
+Checking tab 'Latest Products'
+Found 5 product(s)
+
+Checking product: Yellow Duck
+Regular and Action prices are present: Passed
+Color of regular price is grey: Passed
+Style of regular price is striked out: Passed
+Color of campaign price is red: Passed
+Style of campaign price is bold: Passed (actual: 'bold')
+Size of regular price is less than campaign price: Passed (12.00 ~ 18.75)
+Color of regular (detailed) price is grey: Passed
+Style of regular (detailed) price is striked out: Passed
+Color of campaign (detailed) price is red: Passed
+Style of campaign (detailed) price is bold: Passed (actual: 'bold')
+Size of regular (detailed) price is less than campaign (detailed) price: Passed (22.50 ~ 30.00)
+Product name is correct: Passed (expected 'Yellow Duck' EQ actual 'Yellow Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+Product campaign price is correct: Passed (expected '$18' EQ actual '$18')
+Campaign price is greater than regular price: Passed
+
+Checking product: Green Duck
+Regular and Action prices are missing: Passed
+Product name is correct: Passed (expected 'Green Duck' EQ actual 'Green Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+
+Checking product: Red Duck
+Regular and Action prices are missing: Passed
+Product name is correct: Passed (expected 'Red Duck' EQ actual 'Red Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+
+Checking product: Blue Duck
+Regular and Action prices are missing: Passed
+Product name is correct: Passed (expected 'Blue Duck' EQ actual 'Blue Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+
+Checking product: Purple Duck
+Regular and Action prices are missing: Passed
+Product name is correct: Passed (expected 'Purple Duck' EQ actual 'Purple Duck')
+Product regular price is correct: Passed (expected '$20' EQ actual '$20')
+
+
+Overall result for Chrome: Passed
+.
+
+========================= 3 passed in 136.11 seconds ==========================
+
+Process finished with exit code 0

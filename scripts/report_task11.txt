@@ -1,0 +1,36 @@
+D:\work\courses\selenium-training\venv\Scripts\python.exe C:\Users\radio\.IntelliJIdea2016.3\config\plugins\python\helpers\pycharm\pytestrunner.py -p pytest_teamcity D:/work/courses/selenium-training/scripts/test011.py "-k test_function_Chrome"
+Testing started at 2:32 ...
+============================= test session starts =============================
+platform win32 -- Python 3.6.0, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: D:\work\courses\selenium-training\scripts, inifile:
+collected 1 items
+
+test011.py 
+[02:32:41] > Starting User registration test...
+[02:32:41] > Starting registration
+[02:32:43] [+] Get to the registration page: Passed
+[02:32:43] [+] Generated user name 'Руслан Исаков': Passed
+[02:32:43] [+] Generated email 'jesus7865@yahoo.com': Passed
+[02:32:43] [+] Generated address '146765 Вологодская область, Ряжск, ул. Шишкина 785': Passed
+[02:32:43] [+] Generated password 'lk3bWSKoNX': Passed
+[02:32:44] [.] Set input[name=firstname] = 'Руслан': ok
+[02:32:44] [.] Set input[name=lastname] = 'Исаков': ok
+[02:32:44] [.] Set input[name=address1 = 'ул. Шишкина 785': ok
+[02:32:45] [.] Set input[name=city] = 'Ряжск': ok
+[02:32:45] [.] Set #box-create-account input[name=email] = 'jesus7865@yahoo.com': ok
+[02:32:46] [.] Set #box-create-account input[name=password] = 'lk3bWSKoNX': ok
+[02:32:46] [.] Set input[name=confirmed_password] = 'lk3bWSKoNX': ok
+[02:32:46] [.] Set input[name=postcode] = '146765': ok
+[02:32:46] [.] Uncheck 'input[name=newsletter]' to unsubscribe from newsletters: ok
+[02:32:49] [+] Login successfull: Passed
+[02:32:50] [+] Logout successfull: Passed
+[02:32:51] [.] Set #box-account-login input[name=email] = 'jesus7865@yahoo.com': ok
+[02:32:51] [.] Set #box-account-login input[name=password] = 'lk3bWSKoNX': ok
+[02:32:52] [+] Second login successfull: Passed
+[02:32:52] [+] Logout successfull: Passed
+[02:32:52] < [+] Registration: PASSED
+
+-------------------------------------------------------------------------------
+[02:32:52] < [+] Test 'User registration' overall result: PASSED
+Test execution time is 11.2 seconds
+.

@@ -1,14 +1,13 @@
-import time
 import pytest
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import pprint
+from selenium.webdriver.common.by import By
 
 @pytest.fixture
 def browser(request):
     wd = webdriver.Chrome()
-    #request.addfinalizer(wd.quit)
+    request.addfinalizer(wd.quit)
     return wd
 
 
@@ -27,13 +26,13 @@ def do_login_admin(browser):
     browser.find_element_by_css_selector('button[name="login"]').click()
     wait.until(EC.title_is("My Store"))
     # wait to be sure the page was loaded completely
-    time.sleep(3)
+    wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "li#widget-discussions")))
     print("Login successfull")
     assert(True)
 
 def validate_countries(browser):
     browser.get("http://localhost/litecart/admin/?app=countries&doc=countries")
-    time.sleep(1)
+    WebDriverWait(browser, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".btn-group")))
 
     # Note: usual search, commented due to list generator using below
     # countries = []
@@ -55,16 +54,17 @@ def validate_countries(browser):
 
 def validate_zones(browser):
     browser.get("http://localhost/litecart/admin/?app=geo_zones&doc=geo_zones")
-    time.sleep(1)
+    WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".data-table")))
+
     function_result = True
     for index in range (len(browser.find_elements_by_css_selector("tbody tr"))):
         browser.get("http://localhost/litecart/admin/?app=geo_zones&doc=geo_zones")
-        time.sleep(1)
+        WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".data-table")))
         line = browser.find_elements_by_css_selector("tbody tr")[index]
         country = line.find_elements_by_css_selector("tbody a")[0].get_attribute("outerText")
         print("Building zones list for '%s'.." % country)
         line.find_element_by_css_selector("a").click()
-        time.sleep(1)
+        WebDriverWait(browser, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".btn-group")))
 
         zones = []
         for i in range(len(browser.find_elements_by_css_selector("tbody tr"))):

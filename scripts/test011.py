@@ -4,6 +4,7 @@ import random
 import string
 
 from selenium import webdriver
+from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -36,6 +37,22 @@ def get_user_data(test_locale='en'):
     common.success("Generated address '%s %s, %s, %s'" % (person['postcode'], person['state'], person['city'], person['street']))
     person['password'] = ''.join(random.SystemRandom().choice(string.digits + string.ascii_letters) for _ in range(10))
     common.success("Generated password '%s'" % person['password'])
+    if (test_locale == 'en'):
+        person['country_code'] = 'US'
+        person['country'] = 'United States'
+        person['state_code'] = 'IA'
+        person['state'] = 'Iowa'
+    elif (test_locale == 'ru'):
+        person['country_code'] = 'RU'
+        person['country'] = 'Russian Federation'
+        person['state_code'] = None
+        person['state'] = None
+    else:
+        person['country_code'] = None
+        person['country'] = None
+        person['state_code'] = None
+        person['state'] = None
+    common.success("Generated country '%s' and state '%s'" % (person['country'], person['state']))
     return person
 
 def input_value_to_input_field(browser, data_to_set):
@@ -50,9 +67,29 @@ def input_value_to_input_field(browser, data_to_set):
 
 def set_check_box(browser, locator, set=True):
     field_to_be_set = browser.find_element_by_css_selector(locator)
-    if (field_to_be_set.get_property("checked") != set):
-        field_to_be_set.click()
-    return True
+    try:
+        if (field_to_be_set.get_property("checked") != set):
+            field_to_be_set.click()
+        return True
+    except:
+        return False
+
+def select_from_dropdown_list(browser, data_to_set):
+    value_to_set = data_to_set["value"]
+    # if no value should be set then just return
+    if (not value_to_set):
+        return True
+    field_to_be_set = browser.find_element_by_css_selector(data_to_set["location"])
+    select_field = Select(field_to_be_set)
+    try:
+        WebDriverWait(browser, 15).until(EC.element_to_be_clickable((By.CSS_SELECTOR, data_to_set["location"])))
+        select_field.select_by_value(value_to_set)
+        if (field_to_be_set.get_property("value") == value_to_set):
+            common.info("Set %s = '%s': ok" % (data_to_set["location"], data_to_set["description"]))
+        return True
+    except:
+        common.fail("Set %s = '%s'" % (data_to_set["location"], data_to_set["description"]))
+        return False
 
 def register_user(browser):
     common.start("Starting registration")
@@ -62,7 +99,8 @@ def register_user(browser):
     browser.find_element_by_link_text("New customers click here").click()
     common.success("Get to the registration page")
 
-    user = get_user_data('ru')
+    user = get_user_data('en')
+    # set registration data
     registration_data = [
         {"location": "input[name=firstname]", "value": user["first_name"] },
         {"location": "input[name=lastname]", "value": user["last_name"] },
@@ -75,6 +113,13 @@ def register_user(browser):
     ]
     for field in registration_data:
         function_result = input_value_to_input_field(browser, field) and function_result
+    # select country and state from dropdown list
+    registration_data = [
+        {"location": "select[name=country_code]", "value": user["country_code"], "description": user["country"] },
+        {"location": "select[name=zone_code]", "value": user["state_code"], "description": user["state"] }
+    ]
+    for field in registration_data:
+        function_result = select_from_dropdown_list(browser, field) and function_result
     # unsubscribe from newsletters
     function_result = set_check_box(browser, "input[name=newsletter]", False) and function_result
     common.info("Uncheck '%s' to unsubscribe from newsletters: ok" % "input[name=newsletter]")

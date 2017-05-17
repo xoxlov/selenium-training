@@ -1,36 +1,43 @@
 D:\work\courses\selenium-training\venv\Scripts\python.exe C:\Users\radio\.IntelliJIdea2016.3\config\plugins\python\helpers\pycharm\pytestrunner.py -p pytest_teamcity D:/work/courses/selenium-training/scripts/test011.py "-k test_function_Chrome"
-Testing started at 2:32 ...
+Testing started at 10:45 ...
 ============================= test session starts =============================
 platform win32 -- Python 3.6.0, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
 rootdir: D:\work\courses\selenium-training\scripts, inifile:
 collected 1 items
 
 test011.py 
-[02:32:41] > Starting User registration test...
-[02:32:41] > Starting registration
-[02:32:43] [+] Get to the registration page: Passed
-[02:32:43] [+] Generated user name 'Руслан Исаков': Passed
-[02:32:43] [+] Generated email 'jesus7865@yahoo.com': Passed
-[02:32:43] [+] Generated address '146765 Вологодская область, Ряжск, ул. Шишкина 785': Passed
-[02:32:43] [+] Generated password 'lk3bWSKoNX': Passed
-[02:32:44] [.] Set input[name=firstname] = 'Руслан': ok
-[02:32:44] [.] Set input[name=lastname] = 'Исаков': ok
-[02:32:44] [.] Set input[name=address1 = 'ул. Шишкина 785': ok
-[02:32:45] [.] Set input[name=city] = 'Ряжск': ok
-[02:32:45] [.] Set #box-create-account input[name=email] = 'jesus7865@yahoo.com': ok
-[02:32:46] [.] Set #box-create-account input[name=password] = 'lk3bWSKoNX': ok
-[02:32:46] [.] Set input[name=confirmed_password] = 'lk3bWSKoNX': ok
-[02:32:46] [.] Set input[name=postcode] = '146765': ok
-[02:32:46] [.] Uncheck 'input[name=newsletter]' to unsubscribe from newsletters: ok
-[02:32:49] [+] Login successfull: Passed
-[02:32:50] [+] Logout successfull: Passed
-[02:32:51] [.] Set #box-account-login input[name=email] = 'jesus7865@yahoo.com': ok
-[02:32:51] [.] Set #box-account-login input[name=password] = 'lk3bWSKoNX': ok
-[02:32:52] [+] Second login successfull: Passed
-[02:32:52] [+] Logout successfull: Passed
-[02:32:52] < [+] Registration: PASSED
+[10:45:36] > Starting User registration test...
+[10:45:36] > Starting registration
+[10:45:39] [+] Get to the registration page: Passed
+[10:45:39] [+] Generated user name 'Alva Puckett': Passed
+[10:45:39] [+] Generated email 'jerrod_9817@gmail.com': Passed
+[10:45:39] [+] Generated address '62641 Texas, Seaside, 782 El Camino Del Mar Parkway': Passed
+[10:45:39] [+] Generated password '7sf191fPqt': Passed
+[10:45:39] [+] Generated country 'United States' and state 'Iowa': Passed
+[10:45:39] [.] Set input[name=firstname] = 'Alva': ok
+[10:45:40] [.] Set input[name=lastname] = 'Puckett': ok
+[10:45:40] [.] Set input[name=address1 = '782 El Camino Del Mar Parkway': ok
+[10:45:41] [.] Set input[name=city] = 'Seaside': ok
+[10:45:41] [.] Set #box-create-account input[name=email] = 'jerrod_9817@gmail.com': ok
+[10:45:42] [.] Set #box-create-account input[name=password] = '7sf191fPqt': ok
+[10:45:42] [.] Set input[name=confirmed_password] = '7sf191fPqt': ok
+[10:45:42] [.] Set input[name=postcode] = '62641': ok
+[10:45:43] [.] Set select[name=country_code] = 'United States': ok
+[10:45:48] [.] Set select[name=zone_code] = 'Iowa': ok
+[10:45:48] [.] Uncheck 'input[name=newsletter]' to unsubscribe from newsletters: ok
+[10:45:50] [+] Login successfull: Passed
+[10:45:50] [+] Logout successfull: Passed
+[10:45:51] [.] Set #box-account-login input[name=email] = 'jerrod_9817@gmail.com': ok
+[10:45:51] [.] Set #box-account-login input[name=password] = '7sf191fPqt': ok
+[10:45:52] [+] Second login successfull: Passed
+[10:45:53] [+] Logout successfull: Passed
+[10:45:53] < [+] Registration: PASSED
 
 -------------------------------------------------------------------------------
-[02:32:52] < [+] Test 'User registration' overall result: PASSED
-Test execution time is 11.2 seconds
+[10:45:53] < [+] Test 'User registration' overall result: PASSED
+Test execution time is 16.5 seconds
 .
+
+========================== 1 passed in 23.89 seconds ==========================
+
+Process finished with exit code 0

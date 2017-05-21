@@ -45,6 +45,7 @@ def check_multi_windows(browser):
         start_active_handle = browser.current_window_handle
         # click on the link to open new window
         current_element.click()
+        WebDriverWait(browser, 30).until(EC.new_window_is_opened(list(start_handles)))
         # get handles of windows and find new one
         next_handles = set(browser.window_handles)
         new_handle = next_handles ^ start_handles

@@ -16,8 +16,8 @@ class Application:
     def add_products_to_card(self, products):
         for i in range(len(products)):
             self.products_shop_page.open_products_page()
-            self.products_shop_page.find_product_page(products[i])
-            self.product_details_page.add_product_to_cart()
+            self.products_shop_page.find_product_page(products[i].name)
+            self.product_details_page.add_product_to_cart(products[i])
 
     def clear_shopping_cart(self):
         self.shopping_cart_page.open()

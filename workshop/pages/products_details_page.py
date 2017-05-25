@@ -39,9 +39,9 @@ class ProductsDetailsPage:
         field_to_be_set.clear()
         field_to_be_set.send_keys(value_to_set)
 
-    def add_product_to_cart(self):
-        self.select_size("Small")
-        self.input_quantity(1)
+    def add_product_to_cart(self, product):
+        self.select_size(product.size)
+        self.input_quantity(product.quantity)
         initial_amount = self.cart_items_count.get_property("innerText")
         self.add_to_cart_button.click()
         # wait for the summ for shopping cart to be changed, i.e. previous text to disappear
